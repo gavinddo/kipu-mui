@@ -45,6 +45,12 @@ A primary searchbar.
 
 {{"demo": "PrimarySearchAppBar.js", "bg": true}}
 
+## Kipu-style app header
+
+Prebuilt global nav header with dark purple bar, logo "Kipu", nav icons (settings, messages, calendar, quick actions), and right-side search, notifications badge, documents, and user avatar.
+
+{{"demo": "KipuAppBar.js", "bg": true}}
+
 ## Dense (desktop only)
 
 {{"demo": "DenseAppBar.js", "bg": true}}

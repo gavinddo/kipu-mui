@@ -116,15 +116,15 @@ function mixLightOrDark(colorSpace, intent, direction, shade, tonalOffset) {
 function getDefaultPrimary(mode = 'light') {
   if (mode === 'dark') {
     return {
-      main: blue[200],
-      light: blue[50],
-      dark: blue[400],
+      main: blue[400],
+      light: blue[300],
+      dark: blue[600],
     };
   }
   return {
-    main: blue[700],
+    main: blue[500],
     light: blue[400],
-    dark: blue[800],
+    dark: blue[600],
   };
 }
 
