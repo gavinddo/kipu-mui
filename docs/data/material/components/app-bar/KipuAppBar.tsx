@@ -72,7 +72,7 @@ export default function KipuAppBar({
           size="small"
           color="inherit"
           aria-label="Open app menu"
-          onClick={onMenu}
+          onClick={() => onMenu?.()}
           sx={{ mr: 0.5 }}
         >
           <AppsIcon />
@@ -92,23 +92,23 @@ export default function KipuAppBar({
           size="small"
           color="inherit"
           aria-label="Add person / contact"
-          onClick={onAddPerson}
+          onClick={() => onAddPerson?.()}
         >
           <PersonAddIcon fontSize="small" />
         </IconButton>
 
         {/* Nav icons (center-left) */}
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.25, ml: 2 }}>
-          <IconButton size="small" color="inherit" aria-label="Settings" onClick={onSettings}>
+          <IconButton size="small" color="inherit" aria-label="Settings" onClick={() => onSettings?.()}>
             <SettingsIcon fontSize="small" />
           </IconButton>
-          <IconButton size="small" color="inherit" aria-label="Messages" onClick={onChat}>
+          <IconButton size="small" color="inherit" aria-label="Messages" onClick={() => onChat?.()}>
             <ChatIcon fontSize="small" />
           </IconButton>
-          <IconButton size="small" color="inherit" aria-label="Calendar" onClick={onCalendar}>
+          <IconButton size="small" color="inherit" aria-label="Calendar" onClick={() => onCalendar?.()}>
             <CalendarMonthIcon fontSize="small" />
           </IconButton>
-          <IconButton size="small" color="inherit" aria-label="Quick actions" onClick={onQuickActions}>
+          <IconButton size="small" color="inherit" aria-label="Quick actions" onClick={() => onQuickActions?.()}>
             <BoltIcon fontSize="small" />
           </IconButton>
         </Box>
@@ -116,27 +116,27 @@ export default function KipuAppBar({
         {/* Right: search, notifications, documents, avatar */}
         <Box sx={{ flexGrow: 1 }} />
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.25 }}>
-          <IconButton size="small" color="inherit" aria-label="Search" onClick={onSearch}>
+          <IconButton size="small" color="inherit" aria-label="Search" onClick={() => onSearch?.()}>
             <SearchIcon fontSize="small" />
           </IconButton>
           <IconButton
             size="small"
             color="inherit"
             aria-label={`${notificationCount} notifications`}
-            onClick={onNotifications}
+            onClick={() => onNotifications?.()}
           >
             <Badge badgeContent={notificationCount} color="error" variant="standard">
               <NotificationsIcon fontSize="small" />
             </Badge>
           </IconButton>
-          <IconButton size="small" color="inherit" aria-label="Documents" onClick={onDocuments}>
+          <IconButton size="small" color="inherit" aria-label="Documents" onClick={() => onDocuments?.()}>
             <DescriptionIcon fontSize="small" />
           </IconButton>
           <IconButton
             size="small"
             color="inherit"
             aria-label="Profile"
-            onClick={onProfile}
+            onClick={() => onProfile?.()}
             sx={{ p: 0.5, ml: 0.5 }}
           >
             <Avatar
