@@ -1,6 +1,5 @@
 const shape = {
-  // Large value = pill/capsule rounding (clamped to 50% of each side)
-  borderRadius: 9999,
+  borderRadius: 4,
 };
 
 export default shape;

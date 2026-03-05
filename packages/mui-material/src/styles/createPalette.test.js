@@ -86,7 +86,7 @@ describe('createPalette()', () => {
   it('should create a dark palette', () => {
     const palette = createPalette({ mode: 'dark' });
     expect(palette.primary.main, 'should use blue as the default primary color').to.equal(
-      blue[200],
+      blue[400],
     );
     expect(palette.secondary.main, 'should use purple as the default secondary color').to.equal(
       purple[200],
